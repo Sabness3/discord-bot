@@ -254,4 +254,6 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`🎶 Start playing: **${song.title}**`);
 }
 
-client.login(process.env.token)
+let token = process.env.token
+
+client.login(token)
